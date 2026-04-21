@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="DFD потоков данных между доменами" id="dfd-domains">
+    <mxGraphModel dx="2804" dy="1593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5xiwGg_srQ_UT-SQYF1V-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="890" width="1120" x="50" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" value="&lt;b&gt;Data Flow Diagram (DFD Level 1)&lt;/b&gt;&lt;br&gt;Потоки данных между доменами &#39;Будущее 2.0&#39; (целевая архитектура)" vertex="1">
+          <mxGeometry height="40" width="500" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="clinics" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="&lt;b&gt;Домен: Clinics&lt;/b&gt;&lt;br&gt;• Расписание приёмов&lt;br&gt;• Инвентаризация&lt;br&gt;• Персонал&lt;br&gt;• ❌ Без диагнозов" vertex="1">
+          <mxGeometry height="100" width="180" x="380" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="medical-records" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" value="&lt;b&gt;Домен: MedicalRecords&lt;/b&gt;&lt;br&gt;🔒 ЗАКРЫТЫЙ 🔒&lt;br&gt;• Медкарты&lt;br&gt;• Диагнозы, снимки&lt;br&gt;• Результаты исследований&lt;br&gt;&lt;i&gt;Не доступен для BI&lt;/i&gt;" vertex="1">
+          <mxGeometry height="110" width="180" x="340" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="fintech" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="&lt;b&gt;Домен: Fintech&lt;/b&gt;&lt;br&gt;• Счета, кредиты&lt;br&gt;• Транзакции&lt;br&gt;• Кредитные профили" vertex="1">
+          <mxGeometry height="100" width="180" x="820" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-services" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="&lt;b&gt;Домен: AI Services&lt;/b&gt;&lt;br&gt;• Модели ИИ&lt;br&gt;• Инференс&lt;br&gt;• Метрики качества" vertex="1">
+          <mxGeometry height="100" width="180" x="820" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="pharma" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1;fontSize=10;" value="&lt;b&gt;Домен: Pharma&lt;/b&gt;&lt;br&gt;(подключается через 6 мес)&lt;br&gt;• Поставки лекарств&lt;br&gt;• Клинические исследования" vertex="1">
+          <mxGeometry height="100" width="180" x="140" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="bi-portal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="&lt;b&gt;Self-Service BI Portal&lt;/b&gt;&lt;br&gt;• Конструктор отчётов&lt;br&gt;• Только агрегаты&lt;br&gt;• ❌ Нет доступа к MedicalRecords" vertex="1">
+          <mxGeometry height="100" width="180" x="590" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-clinics-fintech" edge="1" parent="1" source="clinics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" target="fintech" value="агрегаты по загрузке, платежи">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-medical-ai" edge="1" parent="1" source="medical-records" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;strokeColor=#d79b00;strokeWidth=2;" target="ai-services" value="обезличенные снимки, диагнозы (с разрешения)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-fintech-bi" edge="1" parent="1" source="fintech" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="bi-portal" value="финансовые агрегаты (выручка, кредиты)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="280" />
+              <mxPoint x="725" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow-clinics-bi" edge="1" parent="1" source="clinics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="bi-portal" value="загрузка клиник, инвентарь">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="280" />
+              <mxPoint x="635" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow-ai-bi" edge="1" parent="1" source="ai-services" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" target="bi-portal" value="точность диагнозов, загрузка моделей">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow-clinics-pharma" edge="1" parent="1" source="clinics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;dashed=1;" target="pharma" value="расход препаратов (агрегаты)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="220" />
+              <mxPoint x="1140" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow-pharma-clinics" edge="1" parent="1" source="pharma" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;dashed=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.798;exitY=0.003;exitDx=0;exitDy=0;exitPerimeter=0;" target="clinics" value="прогнозы поставок">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="284" y="280" />
+              <mxPoint x="425" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="no-bi-access" edge="1" parent="1" source="medical-records" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;strokeColor=#cc0000;strokeWidth=2;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bi-portal" value="❌ ДОСТУП ЗАПРЕЩЁН">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" value="&lt;b&gt;Условные обозначения:&lt;/b&gt;&lt;br&gt;🟩 Зелёный — домен&lt;br&gt;🟧 Оранжевый — закрытый домен (медтайна)&lt;br&gt;🟦 Синий — BI портал&lt;br&gt;🟪 Фиолетовый — будущий домен&lt;br&gt;❌ Красный — запрещённый поток&lt;br&gt;🔒 MedicalRecords НЕ идёт в BI" vertex="1">
+          <mxGeometry height="110" width="300" x="700" y="760" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
