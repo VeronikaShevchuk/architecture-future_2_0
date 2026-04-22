@@ -1,0 +1,231 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Роадмап изменений на 12 месяцев" id="roadmap">
+    <mxGraphModel dx="2203" dy="1251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GoR_L2fUybQbX3-ukhC1-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="860" width="1560" x="30" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" value="&lt;b&gt;Роадмап технологических изменений «Будущее 2.0» (12 месяцев)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="500" x="600" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="timeline-line" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=3;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="100" as="sourcePoint" />
+            <mxPoint x="1520" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 0" vertex="1">
+          <mxGeometry height="20" width="50" x="190" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 1" vertex="1">
+          <mxGeometry height="20" width="50" x="310" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 2" vertex="1">
+          <mxGeometry height="20" width="50" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 3" vertex="1">
+          <mxGeometry height="20" width="50" x="520" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 4" vertex="1">
+          <mxGeometry height="20" width="50" x="620" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 5" vertex="1">
+          <mxGeometry height="20" width="50" x="720" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 6" vertex="1">
+          <mxGeometry height="20" width="50" x="820" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m7" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 7" vertex="1">
+          <mxGeometry height="20" width="50" x="920" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m8" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 8" vertex="1">
+          <mxGeometry height="20" width="50" x="1020" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m9" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 9" vertex="1">
+          <mxGeometry height="20" width="50" x="1120" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m10" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 10" vertex="1">
+          <mxGeometry height="20" width="50" x="1220" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m11" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 11" vertex="1">
+          <mxGeometry height="20" width="50" x="1320" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m12" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="Мес 12" vertex="1">
+          <mxGeometry height="20" width="50" x="1420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="phase0-result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" value="✅ Архитектура согласована" vertex="1">
+          <mxGeometry height="25" width="150" x="170" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="phase0-owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Ответственные: CTO, Data Architect" vertex="1">
+          <mxGeometry height="25" width="150" x="170" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow0" edge="1" parent="1" source="phase0-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="phase1-box">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="phase1-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="&lt;b&gt;Этап 1: Безопасность и изоляция&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="320" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-detail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b85450;align=left;fontSize=10;" value="• Отключить BI от DWH&lt;br&gt;• Развернуть API Gateway (OPA)&lt;br&gt;• Изолировать MedicalRecords&lt;br&gt;• Внедрить аудит логов" vertex="1">
+          <mxGeometry height="70" width="200" x="320" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" value="✅ BI не видит медданные, аудит работает" vertex="1">
+          <mxGeometry height="25" width="200" x="320" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Ответственные: Security, Infra" vertex="1">
+          <mxGeometry height="25" width="200" x="320" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-duration" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=8;strokeColor=#b85450;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="140" as="sourcePoint" />
+            <mxPoint x="520" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="phase2-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="130" />
+              <mxPoint x="570" y="130" />
+            </Array>
+            <mxPoint x="420" y="150" as="sourcePoint" />
+            <mxPoint x="550" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="phase2-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="&lt;b&gt;Этап 2: Пилот Fintech&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="520" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-detail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#82b366;align=left;fontSize=10;" value="• Миграция финданных в облако&lt;br&gt;• API для Data Product&lt;br&gt;• Настройка Kafka&lt;br&gt;• Интеграция с Clinics" vertex="1">
+          <mxGeometry height="70" width="200" x="520" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" value="✅ Fintech независим, time-to-market ↓70%" vertex="1">
+          <mxGeometry height="25" width="200" x="520" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Ответственные: Fintech, D&amp;A" vertex="1">
+          <mxGeometry height="25" width="200" x="520" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-duration" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=8;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="140" as="sourcePoint" />
+            <mxPoint x="670" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2" edge="1" parent="1" source="phase2-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" target="phase3-box">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="phase3-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="&lt;b&gt;Этап 3: BI Portal MVP&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="720" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-detail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c8ebf;align=left;fontSize=10;" value="• Развернуть Self-Service Portal&lt;br&gt;• Подключить Fintech + Clinics&lt;br&gt;• Конструктор отчётов&lt;br&gt;• Ролевая модель" vertex="1">
+          <mxGeometry height="70" width="200" x="720" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" value="✅ Отчёты: часы → 15 минут" vertex="1">
+          <mxGeometry height="25" width="200" x="720" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Ответственные: D&amp;A, Frontend" vertex="1">
+          <mxGeometry height="25" width="200" x="720" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-duration" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=8;strokeColor=#6c8ebf;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="140" as="sourcePoint" />
+            <mxPoint x="870" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow3" edge="1" parent="1" source="phase3-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;" target="phase4-box">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="phase4-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="&lt;b&gt;Этап 4: AI + MedicalRecords&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="920" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-detail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#d79b00;align=left;fontSize=10;" value="• GPU-инстансы в облаке&lt;br&gt;• Обезличивающий слой&lt;br&gt;• MLflow для моделей&lt;br&gt;• Защищённый API к MedicalRecords" vertex="1">
+          <mxGeometry height="70" width="200" x="920" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" value="✅ ИИ обучен на реальных данных без риска" vertex="1">
+          <mxGeometry height="25" width="200" x="920" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Ответственные: AI, Security" vertex="1">
+          <mxGeometry height="25" width="200" x="920" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-duration" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=8;strokeColor=#d79b00;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="140" as="sourcePoint" />
+            <mxPoint x="1070" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow4" edge="1" parent="1" source="phase4-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;" target="phase5-box">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="phase5-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="&lt;b&gt;Этап 5: Clinics + демонтаж DWH&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="1120" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="phase5-detail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#82b366;align=left;fontSize=10;" value="• Перенос Clinics в облако&lt;br&gt;• Новый веб-интерфейс&lt;br&gt;• DWH → read-only → отключение&lt;br&gt;• Экономия на лицензиях" vertex="1">
+          <mxGeometry height="70" width="200" x="1120" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="phase5-result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" value="✅ SQL Server 2008 выведен, экономия $200k/год" vertex="1">
+          <mxGeometry height="25" width="200" x="1120" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="phase5-owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Ответственные: Clinics, Infra" vertex="1">
+          <mxGeometry height="25" width="200" x="1120" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="phase5-duration" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=8;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1170" y="140" as="sourcePoint" />
+            <mxPoint x="1270" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow5" edge="1" parent="1" source="phase5-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" target="phase6-box">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1350" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="phase6-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;dashed=1;" value="&lt;b&gt;Этап 6: Фарма-партнёр&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="1320" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="phase6-detail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#9673a6;align=left;fontSize=10;" value="• Создать домен Pharma&lt;br&gt;• Обмен агрегатами с Clinics&lt;br&gt;• Интеграция с Fintech&lt;br&gt;• Регистрация в Data Mesh" vertex="1">
+          <mxGeometry height="70" width="200" x="1320" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="phase6-result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" value="✅ Интеграция за 4 недели (было 4-6 мес)" vertex="1">
+          <mxGeometry height="25" width="200" x="1320" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="phase6-owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Ответственные: D&amp;A, Business Dev" vertex="1">
+          <mxGeometry height="25" width="200" x="1320" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="phase6-duration" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=8;strokeColor=#9673a6;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1370" y="140" as="sourcePoint" />
+            <mxPoint x="1470" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="resources-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="&lt;b&gt;Необходимые ресурсы по этапам&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="300" x="170" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="resources-table" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=10;" value="&lt;b&gt;Этап&lt;/b&gt; | &lt;b&gt;Команды&lt;/b&gt; | &lt;b&gt;Облачный бюджет&lt;/b&gt;&lt;br&gt;0 | CTO, Data Architect | $30k (обучение)&lt;br&gt;1 | Security, Infra | $50k&lt;br&gt;2 | Fintech, D&amp;A | $80k&lt;br&gt;3 | D&amp;A, Frontend | $40k&lt;br&gt;4 | AI, Security | $180k (GPU)&lt;br&gt;5 | Clinics, Infra | $50k&lt;br&gt;6 | D&amp;A, Business Dev | $40k" vertex="1">
+          <mxGeometry height="180" width="500" x="170" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="metrics-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="&lt;b&gt;Ключевые бизнес-метрики после внедрения&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="300" x="1000" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="metrics-table" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;fontSize=10;" value="• Time-to-market новых продуктов: 3 мес → 3 нед (↓70%)&lt;br&gt;• Управленческий отчёт: часы → 15 минут (↓90%)&lt;br&gt;• Интеграция нового партнёра: 6 мес → 1 мес (↓80%)&lt;br&gt;• Экономия на лицензиях DWH: $200k/год&lt;br&gt;• Доступность критичных сервисов: 99.9% (было 95%)&lt;br&gt;• Риск утечки медданных: устранён (BI не видит)" vertex="1">
+          <mxGeometry height="120" width="520" x="1000" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=10;" value="&lt;b&gt;Цветовая легенда:&lt;/b&gt;&lt;br&gt;🟪 Согласование / Организационные изменения&lt;br&gt;🟥 Безопасность и комплаенс&lt;br&gt;🟩 Бизнес-домены (Fintech, Clinics)&lt;br&gt;🟦 Портал самообслуживания&lt;br&gt;🟧 AI и медицинские данные&lt;br&gt;🟪 Будущие партнёры" vertex="1">
+          <mxGeometry height="100" width="500" x="170" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="phase0-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="&lt;b&gt;Этап 0: Согласование&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="170" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="phase0-detail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#9673a6;align=left;fontSize=10;" value="• Утверждение Data Mesh&lt;br&gt;• Назначение Data Owner&#39;ов&lt;br&gt;• Контракты с облаком&lt;br&gt;• Обучение команд" vertex="1">
+          <mxGeometry height="70" width="150" x="170" y="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
