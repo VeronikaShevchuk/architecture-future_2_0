@@ -1,0 +1,104 @@
+@startuml
+
+skinparam componentStyle rectangle
+skinparam defaultFontSize 12
+
+title Architecture "Future 2.0" - Level C2
+
+actor Analyst as "Business User / Analyst"
+
+package "Presentation Layer" {
+  component "Self-Service BI Portal" as BI #DAE8FC
+  note right of BI : React + Superset / Metabase\nCatalog, Report Builder, RBAC
+}
+
+package "API & Management" {
+  component "API Gateway" as APIGW #FFF2CC
+  note right of APIGW : Kong / Apigee\nRouting, Rate limiting, Auth
+  
+  component "Data Mesh Control Plane" as MESH #FFF2CC
+  note right of MESH : DataHub / OpenMetadata\nCatalog, Policies, SLA
+}
+
+package "Integration Layer (ESB Decomposition)" {
+  component "Async Bus" as KAFKA #E1D5E7
+  note right of KAFKA : Kafka / Pulsar\nDumb transport, Pub/Sub
+  
+  component "Stream Processing" as FLINK #E1D5E7
+  note right of FLINK : Flink / ksqlDB\nTransformation, Enrichment,\nWindowed aggregations
+  
+  component "Orchestrator" as TEMPORAL #E1D5E7
+  note right of TEMPORAL : Temporal / Camunda\nSagas, long-running processes
+}
+
+package "Data Mesh Layer (Domains)" {
+  component "Fintech" as FINTECH #D5E8D4
+  note right of FINTECH : Go/Java + PostgreSQL\nFinancial profiles, Transactions, Credits\nData Product: REST/gRPC API
+  
+  component "Clinics" as CLINICS #D5E8D4
+  note right of CLINICS : Python/FastAPI + PostgreSQL\nAppointments, Inventory\nOLTP workloads\nNO diagnoses
+  
+  component "Analytics" as CLICKHOUSE #D5E8D4
+  note right of CLICKHOUSE : ClickHouse / Greenplum\nOLAP for BI Portal\nAggregated metrics, Reporting\n(Read replica from domains)
+  
+  component "AI Services" as AI #D5E8D4
+  note right of AI : Python/PyTorch + S3 + Feast\nModel training, Inference\nModel metrics, Insights\nFeature Store\nNO raw medical data
+  
+  component "Pharma" as PHARMA #E1D5E7
+  note right of PHARMA : Java/Spring + PostgreSQL\nDrug supplies, Clinical trials\n(connecting - future)
+}
+
+package "Legacy" {
+  component "Legacy DWH" as DWH #F8CECC
+  note right of DWH : SQL Server 2008\nRead-only historical data\nDecommission in 9-12 months
+}
+
+' ============================================
+' CONNECTIONS
+' ============================================
+Analyst --> BI : HTTPS
+
+BI --> APIGW : REST API
+BI --> CLICKHOUSE : SQL / JDBC\n(для OLAP отчётов)
+
+APIGW --> MESH : gRPC
+
+APIGW --> FINTECH : REST (OLTP)
+APIGW --> CLINICS : REST (OLTP)
+
+FINTECH --> KAFKA : CDC / Kafka Protocol
+CLINICS --> KAFKA : CDC / Kafka Protocol
+AI --> KAFKA : Kafka Protocol
+
+KAFKA --> FLINK : Kafka Protocol
+FLINK --> TEMPORAL : gRPC
+
+FLINK --> CLICKHOUSE : Kafka Sink\n(агрегаты для BI)
+
+TEMPORAL --> FINTECH : REST (callbacks)
+TEMPORAL --> CLINICS : REST (callbacks)
+
+FINTECH --> MESH : REST
+CLINICS --> MESH : REST
+AI --> MESH : REST
+
+CLICKHOUSE --> MESH : REST
+
+DWH --> BI : ODBC (deprecated)
+
+PHARMA --> APIGW : REST (future)
+PHARMA --> KAFKA : Kafka (future)
+
+legend right
+  | <#DAE8FC> Portal | Self-Service BI |
+  | <#FFF2CC> Gateway | API / Control Plane |
+  | <#E1D5E7> Integration | ESB Decomposition |
+  | <#D5E8D4> Domain | Data Products |
+  | <#D5E8D4> Analytics | ClickHouse OLAP |
+  | <#F8CECC> Legacy | To be removed |
+  |=|
+  Medical records are NOT exposed to BI
+  BI reads from ClickHouse (aggregates)
+endlegend
+
+@enduml
