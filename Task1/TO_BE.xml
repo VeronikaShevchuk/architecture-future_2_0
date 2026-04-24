@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Целевая архитектура через год" id="target-arch">
+    <mxGraphModel dx="3014" dy="1031" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Бизнес-пользователь / Аналитик" vertex="1">
+          <mxGeometry height="80" width="40" x="-200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="self-service-portal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Self-Service BI Portal&lt;/b&gt;&lt;br&gt;(Витрина данных / Data Mesh Gateway)&lt;br&gt;• Каталог данных&lt;br&gt;• Авторизация по доменам&lt;br&gt;• Конструктор отчётов" vertex="1">
+          <mxGeometry height="100" width="200" x="-10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-user-portal" edge="1" parent="1" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="self-service-portal" value="запрос отчёта">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="api-gateway" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;API Gateway / Data Mesh Control Plane&lt;/b&gt;&lt;br&gt;• Маршрутизация&lt;br&gt;• Политики доступа&lt;br&gt;• Мониторинг SLA" vertex="1">
+          <mxGeometry height="90" width="200" x="-10" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-portal-gateway" edge="1" parent="1" source="self-service-portal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="api-gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-fintech" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Домен: Fintech&lt;/b&gt;&lt;br&gt;Data Product:&lt;br&gt;• Финансовые профили&lt;br&gt;• Транзакции &amp; кредиты&lt;br&gt;• Агрегаты для BI" vertex="1">
+          <mxGeometry height="100" width="200" x="270" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-clinics" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Домен: Clinics&lt;/b&gt;&lt;br&gt;Data Product:&lt;br&gt;• Записи и загрузка ресурсов&lt;br&gt;• Инвентаризация, персонал&lt;br&gt;• ❌ Нет диагнозов/исследований" vertex="1">
+          <mxGeometry height="100" width="200" x="-260" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-ai" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Домен: AI Services&lt;/b&gt;&lt;br&gt;Data Product:&lt;br&gt;• Метрики моделей&lt;br&gt;• Агрегированные инсайты&lt;br&gt;• ❌ Сырые медданные (внутри)" vertex="1">
+          <mxGeometry height="100" width="200" x="120" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-pharma" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" value="&lt;b&gt;Домен: Pharma (подключается)&lt;/b&gt;&lt;br&gt;Data Product:&lt;br&gt;• Поставки лекарств&lt;br&gt;• Клинические исследования (агрегаты)" vertex="1">
+          <mxGeometry height="90" width="200" x="-120" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-gw-fintech" edge="1" parent="1" source="api-gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="domain-fintech">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-gw-clinics" edge="1" parent="1" source="api-gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="domain-clinics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-gw-ai" edge="1" parent="1" source="api-gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="domain-ai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-gw-pharma" edge="1" parent="1" source="api-gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="domain-pharma">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legacy-dwh" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;" value="&lt;b&gt;Legacy DWH (SQL Server 2008)&lt;/b&gt;&lt;br&gt;• Только для чтения&lt;br&gt;• Исторические отчёты&lt;br&gt;• &lt;i&gt;Демонтаж через 6-9 мес&lt;/i&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="-10" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-legacy-gw" edge="1" parent="1" source="legacy-dwh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="api-gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legacy-label" connectable="0" parent="edge-legacy-gw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="только исторические запросы (deprecated)" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;b&gt;Условные обозначения:&lt;/b&gt;&lt;br&gt;🟦 Портал / Шлюз&lt;br&gt;🟩 Доменный Data Product&lt;br&gt;🟥 Legacy (демонтаж)&lt;br&gt;❌ Медкарты не попадают в BI" vertex="1">
+          <mxGeometry height="100" width="220" x="310" y="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
